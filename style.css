@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid darkgray;
+    padding: 12px 94px;
+}
+
+.header-navigation > .navigation {
+    display: flex;
+}
+
+.header-navigation > .navigation > button {
+    background-color: white;
+    padding: 20px 16px;
+    border: 0px solid gray;
+    cursor: pointer;
+    color: #36454F;
+    font-size: 16px;
+}
+
+.header-navigation > .navigation > button:hover {
+    background-color: gainsboro;
+}
+
+.header-navigation > .navigation > button:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.header-navigation > .navigation > button:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.header-navigation > .logo {
+    width: auto;
+    height: 52px;
+}
+
+.main-content {
+    padding-inline: 94px;
+    padding-top: 16px;
+}
+
+.about {
+    flex-direction: row;
+    display: flex;
+    flex: 50%;
+}
+
+.about > div {
+    flex: 1;
+    margin: 12px;
+}
+
+.circle {
+    width: 240px;
+    height: 240px;
+    border: 1px solid darkgray;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-navigation {
+      flex-direction: column;
+    }
+
+    .header-navigation > .navigation {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .logo {
+      margin-bottom: 14px;
+    }
+}
+
+footer > p{
+    text-align: end;
+}
