@@ -1,5 +1,17 @@
+// toggle icon navbar
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
+
+
+// auto year copyright
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
+// scroll sections
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a')
 
