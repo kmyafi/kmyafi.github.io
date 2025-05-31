@@ -43,6 +43,7 @@ body {
     z-index: 100;
 }
 
+
 .header-navigation > .logo {
     width: auto;
     height: 52px;
@@ -58,7 +59,7 @@ body {
 }
 
 .header-navigation > .navbar a:hover,
-.header-navigation > .navbar a:active {
+.header-navigation > .navbar a.active {
     color: var(--main-color);
     border-bottom: 3px solid royalblue;
 }
