@@ -8,39 +8,126 @@
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
-    
+
     <body>
-        <!-- Navigation Header -->
+        <!-- Navigation header -->
         <header class="header-navigation">
             <img src="assets/logo.png" alt="kmyafi-logo" class="logo"/>
-            <div class="navigation">
-              <button onclick="window.location.href='#about'">About</button>
-              <button onclick="window.location.href='#experiences'">Experiences</button>
-              <button onclick="window.location.href='#projects'">Projects</button>
-              <button onclick="window.location.href='#contacts'">Contacts</button>
-            </div>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <nav class="navbar">
+                <a class="active" href="#home">Home</a>
+                <a href="#experiences">Experiences</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+            </nav>
         </header>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <h1>Kamal Muftie Yafi</h1>
-            <p>Aspiring data scientist.</p>
+        <!-- Hero section -->
+        <section id="home" class="home">
+            <div class="home-content">
+                <h3>Hi, there!</h3>
+                <h1>I'm <span>Kamal Muftie Yafi</span></h1>
+                <p>A final-year Statistics student at
+                    Universitas Indonesia with a strong
+                    background in mathematics, programming,
+                    and data analysis. He is passionate
+                    about data engineering, data science,
+                    and analytics, and has hands-on
+                    experience in research and development.
+                    A quick learner with a determined mindset,
+                    he continuously improves his skills 
+                    through various projects and studies.</p>
+            </div>
+            <div>
+                <div class="circle" style="background-image: url(assets/profile.jpg);"></div>
+            </div>
+        </section>
 
-            <!-- About Content -->
-            <h2 id="about">About Me</h2>
-            <div class="about">
-                <div>
-                    <div class="circle" style="background-image: url(assets/profile.jpg);"></div>
+        <!-- Experiences section -->
+        <section id="experiences" class="experiences">
+            <h2>Experiences</h2>
+            <div class="experience-content">
+                <div class="experience-category">
+                    <h3>Work Experiences</h3>
+                    <div class="experience-item">
+                        <div class="experience-duration">Dec 2024 - Mar 2025</div>
+                        <div class="experience-details">
+                            <h4>Technical Services Intern</h4>
+                            <p class="company">PT Freeport Indonesia</p>
+                            <ul>
+                                <li>Forecasted annual workloads and optimized manpower across 8 work centers using Python, reducing excessive workload by 25%.</li>
+                                <li>Improved inventory planning by analyzing material usage in SAP, adjusting min-max levels, and optimizing procurement timing.</li>
+                                <li>Developed dashboards and scheduling tools in Excel for compliance monitoring, budget forecasting, and daily job tracking.</li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="experience-item">
+                        <div class="experience-duration">Feb 2024 - Jun 2024</div>
+                        <div class="experience-details">
+                            <h4>Data Exploration Intern</h4>
+                            <p class="company">PT Nutrifood Indonesia</p>
+                            <ul>
+                                <li>Performed clustering to group customers route based on geolocation in Python.</li>
+                                <li>Implemented delivery scheduling optimization system using R.</li>
+                                <li>Developed applications to search cluster routes, preprocess datasets, and validate optimization results in Python.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-duration">Feb 2023 - Jun 2024</div>
+                        <div class="experience-details">
+                            <h4>IT Club Instructor</h4>
+                            <p class="company">SMA Sejahtera 1 Depok</p>
+                            <ul>
+                                <li>Mentored and guided 10+ high school students in the IT Club extracurricular, focused on Python language.</li>
+                                <li>Developed Python curriculum for whole year of study, integrating the latest industry trends and best practices.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-duration">Sep 2022 - Jan 2024</div>
+                        <div class="experience-details">
+                            <h4>Statistical Laboratory Assistant</h4>
+                            <p class="company">Department of Mathematics Universitas Indonesia</p>
+                            <ul>
+                                <li>Facilitate interactive synchronous lab sessions for Introduction to Data Science, Data Exploration and Visualization, Linear Modelling, Introduction to Multivariate Analysis, and Nonparametric Statistics courses.</li>
+                                <li>Taught a total of 240+ students of Mathematics, Statistics, and Actuarial Science study programs in applying theoretical concepts by coding and programming via software such as Python, R, and Microsoft Excel.</li>
+                                <li>Created assignments and a comprehensive quiz to assess student progress.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <p>A final-year Statistics student at Universitas Indonesia with a strong background in mathematics, programming, and data analysis. He is passionate about data engineering, data science, and analytics, and has hands-on experience in research and development. A quick learner with a determined mindset, he continuously improves his skills through various projects and studies.</p>
+        
+                <div class="experience-category">
+                    <h3>Organizational Experiences</h3>
+                    <div class="experience-item">
+                        <div class="experience-duration">Mar 2022 - Feb 2023</div>
+                        <div class="experience-details">
+                            <h4>Staff of Evaluation Management, Research, and Analysis Bureau</h4>
+                            <p class="company">Himpunan Mahasiswa Departemen (HMD) Matematika FMIPA UI</p>
+                            <ul>
+                                <li>Created a report and designed a <a href="https://bit.ly/LaporanSurveiKepengurusan2022">dashboard</a> for management survey report of 13 bureaus and departments in HMD Matematika FMIPA UI 2022.</li>
+                                <li>Created analysis reports on 7 work programs of the Simetri (Syiar Matematika Ar-Ruh Al-Islamiyah) Department.</li>
+                                <li>Managed 60+ publication data for <a href="https://hmdm.notion.site/Manajemen-Link-HMDM-dbdcef21e3f649acaca2fd73fb5985a1">Notion Database</a> of HMD Matematika FMIPA UI 2022.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
+        </section>
 
         <!-- Footer -->
         <footer class="footer">
-            <p>© 2025 Kamal</p>
+            <div class="social">
+                <a href="https://github.com/kmyafi"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/kamalmyafi/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="http://instagram.com/kamalmyafi"><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+            <p class="copyright">©<span id="currentYear"></span> Kamal</p>
         </footer>
+        <script src="scripts.js"></script>
     </body>
 </html>
