@@ -17,6 +17,7 @@
     --first-bg-color: #20124D;
     --second-bg-color: #4619BB;
     --text-color: #191919;
+    --hover-color: rgb(223, 223, 223);
 }
 
 html {
@@ -35,6 +36,11 @@ section a:link {
 }
 section a:visited {
     color: #0097A7;
+}
+
+section {
+    /* min-height: 100vh; */
+    padding: 10rem 9% 2rem;
 }
 
 .header-navigation {
@@ -79,11 +85,6 @@ section a:visited {
     display: none;
 }
 
-section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
-}
-
 .home {
     width: 100%;
     min-height: 100vh;
@@ -112,7 +113,7 @@ section {
 }
 
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 1.5rem 0 0;
     line-height: 1.5;
 }
@@ -144,6 +145,48 @@ section {
     text-align: center;
 }
 
+/* Publications section */
+.publication {
+    font-size: 1.8rem;
+    padding-bottom: 3rem;
+}
+
+.publication-item {
+    position: relative;
+    padding: 2rem;
+    border: 0.2rem solid var(--second-bg-color);
+    border-radius: 0.6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.publication-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.publication-item:hover::before {
+    background: var(--hover-color)
+}
+
+.publication-item p{
+    padding-left: 3em;
+    text-indent:-3em;
+    gap: 1.5rem;
+}
+
+.publication-item span{
+    font-weight: 700;
+    color: var(--second-bg-color);
+}
+
 /* Experiences section */
 .experience {
     display: flex;
@@ -151,7 +194,7 @@ section {
     align-items: center;
     flex-direction: column;
     min-height: auto;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
     background: var(--bg-color);
 }
 
@@ -216,7 +259,7 @@ section {
 }
 
 .experience-content .content:hover::before {
-    background: rgb(223, 223, 223);
+    background: var(--hover-color);
 }
 
 .experience-content .content .year {
@@ -246,35 +289,51 @@ section {
     padding-left: 1.35em;
 }
 
-/* Skill section */
+/* Skills section */
 .skills {
-  min-height: auto;
-  padding-bottom: 14rem;
+    min-height: auto;
+    padding-bottom: 6rem;
 }
 
 .skills .container {
-  background: rgba(0, 0, 0, 0);
-  color: #fff;
-  border-radius: 1rem;
-  border: 0.2rem solid var(--first-bg-color);
-  padding: 2rem;
-  width: 98%;
-  margin: auto;
-  margin-top: 2rem;
+    position: relative;
+    color: var(--bg-color);
+    border-radius: 1rem;
+    border: 0.2rem solid var(--first-bg-color);
+    padding: 2rem;
+    width: 98%;
+    margin: auto;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.skills .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.skills .container:hover::before {
+    background: var(--hover-color);
 }
 
 .skills .container .row {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1.8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1.8rem;
 }
 
 .skills .container .bar {
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background: var(--first-bg-color);
-  transition: 0.2s;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: var(--first-bg-color);
+    transition: 0.2s;
 }
 
 .skills .container .bar:hover {
@@ -282,24 +341,116 @@ section {
 }
 
 .skills .container .bar .info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-  margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .skills .container .bar .info span {
-  font-size: 2rem;
-  font-weight: 500;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 /* Projects section */
 .projects {
     background: var(--bg-color);
+    padding-bottom: 4rem;
+    align-items: center;
+    flex-direction: row;
 }
 
+.projects .project-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1.8rem;
+}
+
+.project-item .project-content {
+    position: relative;
+    padding: 2rem;
+    border: 0.2rem solid var(--second-bg-color);
+    border-radius: 0.6rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.project-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.project-content:hover::before {
+    background: var(--hover-color);
+}
+
+.project-content img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.project-content h3 {
+    font-family: 'Lexend';
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+}
+
+.project-content p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.project-content .btn-box{
+    position: relative;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-box .btn{
+    display: flex;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 100%;
+    background-color: var(--first-bg-color);
+    border-radius: 0.8rem;
+    color: var(--bg-color);
+    font-size: 1.6rem;
+    padding: 0.6rem 0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box .btn:hover::before {
+    background: var(--second-bg-color)
+}
+
+/* Certification section */
 .certification {
     justify-content: space-between;
     align-items: center;
@@ -357,12 +508,12 @@ section {
 .footer .social {
     text-align: center;
     padding-bottom: 25px;
-    color: white;
+    color: var(--bg-color);
 }
 
 .footer .social a{
     font-size: 24px;
-    color: white;
+    color: var(--bg-color);
     width: 40px;
     height: 40px;
     line-height: 38px;
@@ -374,7 +525,7 @@ section {
 .footer .copyright {
     text-align: center;
     font-size: 12px;
-    color: white;
+    color: var(--bg-color);
 }
 
 @media (max-width: 1200px) {
