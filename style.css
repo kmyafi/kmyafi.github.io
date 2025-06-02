@@ -90,7 +90,7 @@ section {
     background: var(--bg-color);
     display: flex;
     align-items: center;
-    gap: 7em;
+    gap: 4em;
     padding: 0 9%;
 }
 
@@ -258,7 +258,7 @@ section {
   border-radius: 1rem;
   border: 0.2rem solid var(--first-bg-color);
   padding: 2rem;
-  width: 90%;
+  width: 98%;
   margin: auto;
   margin-top: 2rem;
 }
@@ -434,7 +434,50 @@ section {
     }
 
     .circle {
-        width: 20rem;
-        height: 20rem;
+        width: 22rem;
+        height: 22rem;
+    }
+}
+
+@media (max-width: 520px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home-content h1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .home {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 462px) {
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 3rem;
+    }
+
+    .experience {
+        padding: 10rem 4% 5rem 5%;
+    }
+
+    .skills {
+        padding: 10rem 4% 5rem 5%;
+    }
+}
+
+@media (max-width: 371px) {
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
 }
