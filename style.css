@@ -59,7 +59,7 @@ section {
 
 .header-navigation > .logo {
     width: auto;
-    height: 52px;
+    height: 5rem;
 }
 
 .header-navigation > .navbar a{
@@ -92,7 +92,7 @@ section {
     display: flex;
     align-items: center;
     gap: 4em;
-    padding: 0 9%;
+    padding: 10rem 9%;
 }
 
 .home-content {
@@ -544,7 +544,7 @@ section {
     }
 
     .home {
-        padding: 0 4%;
+        padding: 12rem 4%;
     }
 
     .footer {
