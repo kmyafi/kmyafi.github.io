@@ -507,7 +507,6 @@ section {
 
 .footer .social {
     text-align: center;
-    padding-bottom: 25px;
     color: var(--bg-color);
 }
 
@@ -522,9 +521,20 @@ section {
     border-radius: 50%;
 }
 
+.footer p {
+    text-align: center;
+    font-size: 14px;
+    color: var(--bg-color);
+    padding-bottom: 1rem;
+}
+
+.footer p a{
+    color: var(--bg-color);
+}
+
 .footer .copyright {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--bg-color);
 }
 
