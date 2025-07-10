@@ -78,6 +78,7 @@ section {
 }
 
 #menu-icon {
+    font-size: 3.3rem;
     color: var(--bg-color);
     cursor: pointer;
     display: none;
@@ -565,10 +566,6 @@ section {
 }
 
 @media (max-width: 768px) {
-    .header-navigation {
-        background: linear-gradient(to right, var(--first-bg-color), var(--second-bg-color));
-    }
-
     #menu-icon {
         display: block;
     }
